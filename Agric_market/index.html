@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriMarket | Fresh From Farm to Table</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background:
+                linear-gradient(rgba(6, 78, 59, 0.85),
+                                rgba(6, 78, 59, 0.85)),
+                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80')
+                center/cover;
+        }
+
+        .feature-card {
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVIGATION -->
+<header class="bg-emerald-800 text-white shadow-lg sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-5 py-4 flex flex-wrap items-center justify-between">
+
+        <a href="index.html" class="text-2xl font-bold text-amber-300">
+            <i class="fas fa-leaf mr-2"></i>AgriMarket
+        </a>
+
+        <button id="menuBtn"
+                class="md:hidden text-2xl"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div id="navLinks"
+             class="hidden w-full mt-4 md:mt-0 md:w-auto md:flex md:items-center md:gap-6">
+
+            <a href="index.html" class="block py-2 hover:text-amber-300">Home</a>
+            <a href="catalogue.php" class="block py-2 hover:text-amber-300">Produce Catalogue</a>
+            <a href="about.php" class="block py-2 hover:text-amber-300">About Us</a>
+            <a href="admin_dashboard.php" class="block py-2 hover:text-amber-300">Admin</a>
+            <a href="form.php?action=login" class="block py-2 hover:text-amber-300">Login</a>
+
+            <a href="form.php?action=register"
+               class="inline-block mt-2 md:mt-0 bg-amber-400 text-emerald-950 px-5 py-2 rounded-lg font-semibold hover:bg-amber-300">
+                Register
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero text-white text-center py-24 px-5">
+    <div class="max-w-3xl mx-auto">
+
+        <p class="text-amber-300 font-semibold uppercase tracking-widest mb-4">
+            Fresh From Farm to Table
+        </p>
+
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Welcome to AgriMarket
+        </h1>
+
+        <p class="text-lg md:text-xl leading-relaxed mb-8">
+            Connecting farmers directly with buyers.
+            Discover fresh agricultural produce, support local farmers
+            and enjoy convenient online shopping.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+
+            <a href="catalogue.php"
+               class="bg-amber-400 text-emerald-950 px-7 py-3 rounded-lg font-bold hover:bg-amber-300">
+                Explore Produce
+            </a>
+
+            <a href="form.php?action=register"
+               class="border-2 border-white px-7 py-3 rounded-lg font-bold hover:bg-white hover:text-emerald-800">
+                Join AgriMarket
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="max-w-6xl mx-auto px-5 py-16 text-center">
+
+    <h2 class="text-3xl font-bold text-emerald-800 mb-5">
+        Your Trusted Agricultural Marketplace
+    </h2>
+
+    <p class="max-w-3xl mx-auto text-gray-600 leading-8">
+        AgriMarket is an online platform designed to bring farmers and
+        buyers together. Farmers can advertise their produce while
+        buyers can browse products, manage shopping carts and place orders.
+    </p>
+
+</section>
+
+<!-- SERVICES -->
+<section class="bg-emerald-50 py-16 px-5">
+
+    <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-emerald-800">
+                What You Can Do on AgriMarket
+            </h2>
+
+            <p class="text-gray-600 mt-3">
+                Simple tools for every marketplace user.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="feature-card bg-white p-8 rounded-xl shadow text-center">
+                <i class="fas fa-tractor text-4xl text-emerald-700 mb-5"></i>
+
+                <h3 class="text-xl font-bold mb-3">For Farmers</h3>
+
+                <p class="text-gray-600 leading-7 mb-5">
+                    Advertise agricultural produce, manage listings
+                    and reach potential customers.
+                </p>
+
+                <a href="form.php?action=register"
+                   class="text-emerald-700 font-bold hover:underline">
+                    Register as a Farmer
+                </a>
+            </div>
+
+            <div class="feature-card bg-white p-8 rounded-xl shadow text-center">
+                <i class="fas fa-basket-shopping text-4xl text-emerald-700 mb-5"></i>
+
+                <h3 class="text-xl font-bold mb-3">For Buyers</h3>
+
+                <p class="text-gray-600 leading-7 mb-5">
+                    Browse fresh produce, add products to your cart
+                    and place orders conveniently.
+                </p>
+
+                <a href="catalogue.php"
+                   class="text-emerald-700 font-bold hover:underline">
+                    Browse Produce
+                </a>
+            </div>
+
+            <div class="feature-card bg-white p-8 rounded-xl shadow text-center">
+                <i class="fas fa-user-shield text-4xl text-emerald-700 mb-5"></i>
+
+                <h3 class="text-xl font-bold mb-3">For Administrators</h3>
+
+                <p class="text-gray-600 leading-7 mb-5">
+                    Manage user accounts, review produce listings
+                    and monitor marketplace orders.
+                </p>
+
+                <a href="form.php?action=login"
+                   class="text-emerald-700 font-bold hover:underline">
+                    Administrator Login
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="max-w-6xl mx-auto px-5 py-16">
+
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-emerald-800">
+            Why Choose AgriMarket?
+        </h2>
+
+        <p class="text-gray-600 mt-3">
+            Growing together through agriculture.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+
+        <div class="p-6">
+            <i class="fas fa-handshake text-4xl text-emerald-700 mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">Direct Connections</h3>
+            <p class="text-gray-600">
+                Connect farmers with buyers through one convenient platform.
+            </p>
+        </div>
+
+        <div class="p-6">
+            <i class="fas fa-cart-shopping text-4xl text-emerald-700 mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">Easy Ordering</h3>
+            <p class="text-gray-600">
+                Browse produce and place orders online with ease.
+            </p>
+        </div>
+
+        <div class="p-6">
+            <i class="fas fa-shield-halved text-4xl text-emerald-700 mb-4"></i>
+            <h3 class="font-bold text-xl mb-3">Managed Marketplace</h3>
+            <p class="text-gray-600">
+                Product listings and marketplace accounts are managed
+                by administrators.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="bg-emerald-800 text-white text-center py-16 px-5">
+
+    <h2 class="text-3xl font-bold mb-4">
+        Ready to Get Started?
+    </h2>
+
+    <p class="mb-8 text-emerald-100">
+        Join AgriMarket and become part of a growing agricultural community.
+    </p>
+
+    <a href="form.php?action=register"
+       class="inline-block bg-amber-400 text-emerald-950 px-8 py-3 rounded-lg font-bold hover:bg-amber-300">
+        Create Your Account
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-emerald-950 text-gray-200 py-8 px-5">
+
+    <div class="max-w-6xl mx-auto text-center">
+
+        <h2 class="text-2xl font-bold text-amber-300 mb-3">
+            <i class="fas fa-leaf mr-2"></i>AgriMarket
+        </h2>
+
+        <p class="text-gray-300 mb-5">
+            Connecting local farmers with buyers through a convenient
+            agricultural marketplace.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <a href="index.html" class="hover:text-amber-300">Home</a>
+            <a href="about.php" class="hover:text-amber-300">About Us</a>
+            <a href="catalogue.php" class="hover:text-amber-300">Catalogue</a>
+            <a href="form.php?action=login" class="hover:text-amber-300">Login</a>
+            <a href="form.php?action=register" class="hover:text-amber-300">Register</a>
+        </div>
+
+        <p class="text-sm text-gray-400">
+            &copy; <span id="year"></span> AgriMarket.
+            All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+<!-- MOBILE MENU AND YEAR -->
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    menuBtn.addEventListener('click', function () {
+        const isOpen = !navLinks.classList.contains('hidden');
+
+        navLinks.classList.toggle('hidden');
+        menuBtn.setAttribute('aria-expanded', String(!isOpen));
+
+        menuBtn.innerHTML = isOpen
+            ? '<i class="fas fa-bars"></i>'
+            : '<i class="fas fa-times"></i>';
+    });
+
+    document.getElementById('year').textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
+
+
+    
